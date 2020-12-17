@@ -1,0 +1,399 @@
+-- Tabeli struktuur tabelile `muusika_andmed`
+--
+
+CREATE TABLE `muusika_andmed` (
+  `answer_id` int(28) NOT NULL,
+  `play_intsrument` varchar(255) NOT NULL,
+  `fav_instrument` varchar(255) NOT NULL,
+  `age` varchar(255) NOT NULL,
+  `gender` varchar(255) NOT NULL,
+  `location` varchar(40) NOT NULL,
+  `fav_style` varchar(255) NOT NULL,
+  `fav_artist` varchar(255) NOT NULL,
+  `fav_plat` varchar(255) NOT NULL,
+  `grade_estradio` decimal(5,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `muusika_andmed`
+--
+
+INSERT INTO `muusika_andmed` (`answer_id`, `play_intsrument`, `fav_instrument`, `age`, `gender`, `location`, `fav_style`, `fav_artist`, `fav_plat`, `grade_estradio`) VALUES
+(1, 'Ei', 'Trummid,Parmupill,Klaver', 'alla 18', 'Mees', 'Saaremaa', 'Hiphop', ' ', 'Spotify,Soundcloud', '2'),
+(2, 'Jah', 'Kitarr', '21+', 'Naine', 'Saaremaa', 'Pop,Bluus', ' ', 'Spotify,Youtube', '5'),
+(3, 'Jah', 'Trummid,Flööt,Parmupill,Saksofon,Akordion', 'alla 18', 'Mees', 'Tallinn', 'EDM,Eesti räpp,House,Future House', 'Syn Cole', 'Spotify,Google Play,Raadio,Kontsert', '2'),
+(4, 'Jah', 'Kitarr,Parmupill,Saksofon', '21+', 'Mees', 'Saaremaa', 'Hiphop,Eesti räpp,House,Kantri,Bluus', 'Keeruline õelda', 'Youtube', '1'),
+(5, 'Ei', 'Kitarr', '21+', 'Mees', 'Tallinn', 'Hiphop,EDM,Eesti räpp', 'Kygo,One Republic', 'Spotify,Youtube', '4'),
+(6, 'Ei', 'Parmupill', '21+', 'Mees', 'Muu', 'Kantri', 'Meister Jaan', 'Youtube', '3'),
+(7, 'Ei', 'Kitarr,Trummid,Parmupill,Klaver', '21+', 'Mees', 'Tallinn', 'Pop', 'Üllar Jõrberg', 'Spotify,Youtube,Raadio', '4'),
+(8, 'Ei', 'Kitarr,Klaver', '21+', 'Mees', 'Saaremaa', 'EDM,House,Kantri', 'R3hab', 'Soundcloud,Youtube', '4'),
+(9, 'Ei', 'Kitarr', '21+', 'Naine', 'Saaremaa', 'Eesti räpp', 'Pole', 'Youtube,Raadio,Kontsert', '4'),
+(10, 'Ei', 'Kitarr,Kontrabass', '21+', 'Mees', 'Pärnu', 'Hiphop,EDM,Eesti räpp,House,Dubstep', 'Skrillex', 'Spotify,Soundcloud,Mixcloud', '3'),
+(11, 'Jah', 'Kitarr', '21+', 'Naine', 'Tallinn', 'Pop,Kantri,Bluus', 'Beyonce', 'Spotify,Youtube,Raadio,Kontsert', '5'),
+(12, 'Jah', 'Trummid', 'alla 18', 'Mees', 'Tallinn', 'Hiphop,Rock,Bluus', 'Tyler the Creator', 'Spotify,Soundcloud', '2'),
+(13, 'Jah', 'Kitarr,Klaver', 'alla 18', 'Mees', 'Pärnu', 'Eesti räpp', 'Nublu', 'Spotify,Soundcloud', '3'),
+(14, 'Ei', 'Trummid', 'alla 18', 'Naine', 'Muu', 'Hiphop,EDM,Eesti räpp', '5miinust', 'Spotify,Youtube', '4'),
+(15, 'Jah', 'Trummid', '18-21', 'Mees', 'Pärnu', 'House,Rock', 'Metallica', 'Spotify', '2'),
+(16, 'Ei', 'Kitarr', '21+', 'Naine', 'Tallinn', 'Bluus', 'Amy Winehouse', 'Spotify', '3'),
+(17, 'Ei', 'Klaver', '18-21', 'Naine', 'Tallinn', 'Hiphop,Techno,Funk', 'Lexsoul Dancemachine,Kanye West', 'Spotify,Soundcloud', '3'),
+(18, 'Ei', 'Klaver', '18-21', 'Mees', 'Muu', 'Pop,Kantri,Bluus', 'Shawn Mendes', 'Spotify,Kontsert', '2'),
+(19, 'Ei', 'Kitarr,Klaver', '21+', 'Naine', 'Muu', 'Rock', 'Pink', 'Kontsert', '5'),
+(20, 'Ei', 'Kitarr', '21+', 'Mees', 'Tallinn', 'Rock', 'Red Hot Chili Peppers', 'Spotify', '4'),
+(21, 'Jah', 'Kitarr,Trummid,Parmupill', '21+', 'Mees', 'Saaremaa', 'Hiphop,EDM,Eesti räpp,House', 'Nublu', 'Spotify,Youtube', '3'),
+(22, 'Jah', 'Kitarr,Klaver,Saksofon', '21+', 'Mees', 'Saaremaa', 'Pop', 'Ivo Linna', 'Youtube,Raadio,Kontsert', '5'),
+(23, 'Ei', 'Parmupill', '21+', 'Mees', 'Saaremaa', 'Eesti räpp', 'Nublu', 'Youtube', '4'),
+(24, 'Jah', 'Kitarr,Trummid,Flööt', '21+', 'Mees', 'Saaremaa', 'Hiphop,EDM,Eesti räpp,House', 'Nublu', 'Spotify,Soundcloud,Youtube,Raadio,Kontsert', '2'),
+(25, 'Ei', 'Kitarr,Flööt,Klaver', '18-21', 'Naine', 'Tallinn', 'Hiphop,Pop,House,Rock', 'Selena Gomez', 'Spotify,Youtube', '3'),
+(26, 'Ei', 'Kitarr', '21+', 'Mees', 'Tallinn', 'EDM,Pop,Rock', 'Tame Impala', 'Spotify', '3');
+
+--
+-- Indeksid tõmmistatud tabelitele
+--
+
+--
+-- Indeksid tabelile `muusika_andmed`
+--
+ALTER TABLE `muusika_andmed`
+  ADD KEY `answer_id` (`answer_id`);
+
+--
+-- AUTO_INCREMENT tõmmistatud tabelitele
+--
+
+--
+-- AUTO_INCREMENT tabelile `muusika_andmed`
+--
+ALTER TABLE `muusika_andmed`
+  MODIFY `answer_id` int(28) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+--
+-- Andmebaas: `veebiliides`
+--
+CREATE DATABASE IF NOT EXISTS `veebiliides` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `veebiliides`;
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `age`
+--
+
+CREATE TABLE `age` (
+  `age_id` int(11) NOT NULL,
+  `vanus` varchar(50) NOT NULL,
+  `arv` decimal(25,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `age`
+--
+
+INSERT INTO `age` (`age_id`, `vanus`, `arv`) VALUES
+(1, 'alla 18', '5'),
+(2, '21+', '17'),
+(3, '18-21', '4');
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `estradio_grade`
+--
+
+CREATE TABLE `estradio_grade` (
+  `estradio_grade_id` int(11) NOT NULL,
+  `hinne` tinyint(5) NOT NULL,
+  `arv` tinyint(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `estradio_grade`
+--
+
+INSERT INTO `estradio_grade` (`estradio_grade_id`, `hinne`, `arv`) VALUES
+(1, 1, 1),
+(2, 2, 6),
+(3, 3, 8),
+(4, 4, 7),
+(5, 5, 4);
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `favo_plat`
+--
+
+CREATE TABLE `favo_plat` (
+  `favo_plat_id` int(11) NOT NULL,
+  `platvorm` varchar(80) NOT NULL,
+  `arv` decimal(25,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `favo_plat`
+--
+
+INSERT INTO `favo_plat` (`favo_plat_id`, `platvorm`, `arv`) VALUES
+(1, 'Youtube', '14'),
+(2, 'Spotify', '19'),
+(3, 'Soundcloud', '7'),
+(4, 'Raadio', '6'),
+(5, 'Kontsert', '7');
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `favo_style`
+--
+
+CREATE TABLE `favo_style` (
+  `favo_style_id` int(11) NOT NULL,
+  `stiil` varchar(80) NOT NULL,
+  `arv` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `favo_style`
+--
+
+INSERT INTO `favo_style` (`favo_style_id`, `stiil`, `arv`) VALUES
+(1, 'Hiphop', '10'),
+(2, 'Eesti räpp', '10'),
+(3, 'EDM', '8'),
+(4, 'House', '8'),
+(5, 'Pop', '7'),
+(6, 'Rock', '6'),
+(7, 'Kantri', '5'),
+(8, 'Bluus', '6'),
+(9, 'Future house', '1'),
+(10, 'Dubstep', '1');
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `fav_instrument`
+--
+
+CREATE TABLE `fav_instrument` (
+  `fav_instrument_id` int(11) NOT NULL,
+  `intstrument` varchar(80) NOT NULL,
+  `arv` tinyint(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `fav_instrument`
+--
+
+INSERT INTO `fav_instrument` (`fav_instrument_id`, `intstrument`, `arv`) VALUES
+(1, 'Kitarr', 17),
+(2, 'Trummid', 8),
+(3, 'Flööt', 3),
+(4, 'Parmupill', 7),
+(5, 'Klaver', 8),
+(6, 'Saksofon', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `gender`
+--
+
+CREATE TABLE `gender` (
+  `gender_id` int(11) NOT NULL,
+  `sugu` varchar(80) NOT NULL,
+  `arv` decimal(25,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `gender`
+--
+
+INSERT INTO `gender` (`gender_id`, `sugu`, `arv`) VALUES
+(1, 'mees', '17'),
+(2, 'naine', '9');
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `loc`
+--
+
+CREATE TABLE `loc` (
+  `loc_id` int(11) NOT NULL,
+  `elukoht` varchar(120) NOT NULL,
+  `arv` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `loc`
+--
+
+INSERT INTO `loc` (`loc_id`, `elukoht`, `arv`) VALUES
+(1, 'Tallinn', '10'),
+(2, 'Saaremaa', '9'),
+(3, 'Muu', '4'),
+(4, 'Pärnu', '3');
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `play_intsrument`
+--
+
+CREATE TABLE `play_intsrument` (
+  `play_intsrument_id` int(11) NOT NULL,
+  `kas` varchar(80) NOT NULL,
+  `arv` tinyint(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `play_intsrument`
+--
+
+INSERT INTO `play_intsrument` (`play_intsrument_id`, `kas`, `arv`) VALUES
+(1, 'ei', 16),
+(2, 'jah', 10);
+
+-- --------------------------------------------------------
+
+--
+-- Tabeli struktuur tabelile `time_to_listen`
+--
+
+CREATE TABLE `time_to_listen` (
+  `time_to_listen_id` int(11) NOT NULL,
+  `kuulamisaeg` varchar(80) NOT NULL,
+  `arv` decimal(25,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Andmete tõmmistamine tabelile `time_to_listen`
+--
+
+INSERT INTO `time_to_listen` (`time_to_listen_id`, `kuulamisaeg`, `arv`) VALUES
+(1, 'Vabal ajal', '20'),
+(2, 'Töö ajal', '8'),
+(3, 'Kooli ajal', '9'),
+(4, 'Autoga sõites', '18'),
+(5, 'Peol', '18'),
+(6, 'Trenni tehes', '17'),
+(7, 'Siis kui isu tuleb', '1');
+
+--
+-- Indeksid tõmmistatud tabelitele
+--
+
+--
+-- Indeksid tabelile `age`
+--
+ALTER TABLE `age`
+  ADD PRIMARY KEY (`age_id`);
+
+--
+-- Indeksid tabelile `estradio_grade`
+--
+ALTER TABLE `estradio_grade`
+  ADD PRIMARY KEY (`estradio_grade_id`);
+
+--
+-- Indeksid tabelile `favo_plat`
+--
+ALTER TABLE `favo_plat`
+  ADD PRIMARY KEY (`favo_plat_id`);
+
+--
+-- Indeksid tabelile `favo_style`
+--
+ALTER TABLE `favo_style`
+  ADD PRIMARY KEY (`favo_style_id`);
+
+--
+-- Indeksid tabelile `fav_instrument`
+--
+ALTER TABLE `fav_instrument`
+  ADD PRIMARY KEY (`fav_instrument_id`);
+
+--
+-- Indeksid tabelile `gender`
+--
+ALTER TABLE `gender`
+  ADD PRIMARY KEY (`gender_id`);
+
+--
+-- Indeksid tabelile `loc`
+--
+ALTER TABLE `loc`
+  ADD PRIMARY KEY (`loc_id`);
+
+--
+-- Indeksid tabelile `play_intsrument`
+--
+ALTER TABLE `play_intsrument`
+  ADD PRIMARY KEY (`play_intsrument_id`);
+
+--
+-- Indeksid tabelile `time_to_listen`
+--
+ALTER TABLE `time_to_listen`
+  ADD PRIMARY KEY (`time_to_listen_id`);
+
+--
+-- AUTO_INCREMENT tõmmistatud tabelitele
+--
+
+--
+-- AUTO_INCREMENT tabelile `age`
+--
+ALTER TABLE `age`
+  MODIFY `age_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT tabelile `estradio_grade`
+--
+ALTER TABLE `estradio_grade`
+  MODIFY `estradio_grade_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT tabelile `favo_plat`
+--
+ALTER TABLE `favo_plat`
+  MODIFY `favo_plat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT tabelile `favo_style`
+--
+ALTER TABLE `favo_style`
+  MODIFY `favo_style_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT tabelile `fav_instrument`
+--
+ALTER TABLE `fav_instrument`
+  MODIFY `fav_instrument_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT tabelile `gender`
+--
+ALTER TABLE `gender`
+  MODIFY `gender_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT tabelile `loc`
+--
+ALTER TABLE `loc`
+  MODIFY `loc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT tabelile `play_intsrument`
+--
+ALTER TABLE `play_intsrument`
+  MODIFY `play_intsrument_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT tabelile `time_to_listen`
+--
+ALTER TABLE `time_to_listen`
+  MODIFY `time_to_listen_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
